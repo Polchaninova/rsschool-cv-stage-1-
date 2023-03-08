@@ -34,7 +34,8 @@ ul,
 ol {
   list-style: none;
 }
-li {
+a {
+  display: block;
   text-decoration: none;
 }
 img {
@@ -42,6 +43,5 @@ img {
   max-width: 100%;
   height: auto;
 }
-body{
-  
+body {
 }

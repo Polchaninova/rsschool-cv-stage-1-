@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-ul,
-ol {
-  padding: 0;
-  padding: 0;
-}
-
 body,
 h1,
 h2,
@@ -26,6 +20,7 @@ dl,
 dd {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 body {
@@ -40,7 +35,8 @@ ol {
   list-style: none;
 }
 
-li {
+a {
+  display: block;
   text-decoration: none;
 }
 
@@ -48,4 +44,57 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.spesing {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header {
+  background-color: rgb(242, 238, 246);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-list__item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.menu-list__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.14;
+  color: rgb(27, 26, 26);
+}
+.menu-list__link.current {
+  color: blueviolet;
 }/*# sourceMappingURL=main.css.map */

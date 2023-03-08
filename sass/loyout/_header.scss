@@ -1,0 +1,29 @@
+.header {
+  background-color: rgb(242, 238, 246);
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-list__item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.menu-list__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.14;
+
+  color: rgb(27, 26, 26);
+
+  &.current {
+    color: blueviolet;
+  }
+}
